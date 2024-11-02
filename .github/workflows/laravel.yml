@@ -49,6 +49,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
+            git clone https://github.com/FarruxUmarov/NT-rentapp
             cd rentapp
             git pull
             docker-compose -f docker-compose.production.yml up -d --build
