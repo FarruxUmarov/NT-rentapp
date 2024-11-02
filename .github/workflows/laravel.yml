@@ -48,7 +48,6 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            script: |
                 cd rentapp || exit 1
                  git pull
                  docker-compose -f docker-compose.yml up -d --build
